@@ -4,7 +4,8 @@ var initialise = function() {
   var container = document.querySelector( "#main-map" );
   var mainMap = new MapWrapper( container, coords, zoom);
 
-  var text = "Hello, I'm an info window"
+  var text = "Hello, I'm an info window";
+  var chicagoText = "The best pizzas in Illnois";
 
   mainMap.addMarker( coords );
 
@@ -16,6 +17,8 @@ var initialise = function() {
   var chicago = { lat: 41.877, lng: -87.630 };
       mainMap.googleMap.setCenter( chicago )
       mainMap.addMarker( chicago )
+      mainMap.addInfoWindow( chicago, chicagoText );
+
     }
 
   var chicagoButton = document.querySelector( "#chicago-button" );
