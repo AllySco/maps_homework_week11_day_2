@@ -14,7 +14,8 @@ var initialise = function() {
 
   var centreOnChicago = function() {
   var chicago = { lat: 41.877, lng: -87.630 };
-      mainMap.setCenter( chicago )
+      mainMap.googleMap.setCenter( chicago )
+      mainMap.addMarker( chicago )
     }
 
   var chicagoButton = document.querySelector( "#chicago-button" );
