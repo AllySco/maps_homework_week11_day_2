@@ -39,18 +39,4 @@ MapWrapper.prototype = {
     });
   }
 
- // centreOnChicago: function( coords ){
- //  this.googleMap.addListener( "click", function( event)
- //    ) {
- //      var coords = { coords }
- //      this.addMarker( coords )
- //    }.bind( this );
- //  }
- //  var marker = new google.maps.Marker({
- //    position: coords,
- //    map: this.googleMap
- //  });
- //  var setchicago = this.googleMap.setCenter( coords );
- // }
-
 }
